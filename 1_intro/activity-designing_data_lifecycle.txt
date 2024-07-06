@@ -1,0 +1,91 @@
+# Activity: Design a data lifecycle plan
+
+## Scenario : 
+
+You’ve been hired as a cloud data analyst at TheLook eCommerce, a global company that sells clothing products through physical stores and digital channels, 
+including their own website, mobile app, and various third-party social media apps. TheLook eCommerce has been growing quickly thanks to the company’s wide 
+variety of clothing styles, innovative practices, and commitment to ethical and sustainable sourcing.
+
+To handle the rapidly growing amount of data they need to analyze, TheLook eCommerce data team has prioritized the development of a comprehensive data lifecycle 
+plan that ensures secure and effective data management. To support that goal, you recently met with key stakeholders in the merchandising and marketing departments. 
+During that meeting, the stakeholders identifed key business questions they need answered to make effective data-driven decision-making. They also shared their 
+current data usage patterns and concerns.
+
+Based on that information, you’ve been asked to identify recommendations to improve the current data lifecycle plan. The goal for that plan is to ensure data is 
+effectively managed throughout its lifecycle and that data is accessible to the stakeholders for decision-making.
+
+First, you’ll align the stakeholders' key business questions with the desired outcomes. Doing so will clarify what specific data you need to gather and analyze 
+to address their needs.
+
+Next, you’ll use the stakeholder information to identify the specific data you need to gather and analyze. This task will enable you to recommend suitable data 
+sources, identify potential data gaps, and suggest any necessary transformations to fulfill the stakeholders' needs.
+
+Finally, you’ll review the stakeholder feedback and outline recommendations for data management, analysis, usage, and eventual destruction to complete the data 
+lifecycle plan.
+
+
+### TASK 1 : PLANNING
+
+Business Question : Which products are most often purchased together?
+> Objective       : Increase sales of related products by 10% over the next six months by bundling items most often purchased together.
+> Data Needed     : Items purchased by customers during the same transaction over the last six months.
+
+Business Question : Which products are selling the most?
+> Objective       : Increase sales of top-selling items by 15% by ranking the top 100 items by sales volume in the past 30 days and prioritize the marketing of those items.
+> Data Needed     : Sales volume for each items purchased in last 30 days, get the top 100 items.
+
+Business Question : How can we use point of sale data to better manage inventory? 
+> Objective       : Reduce the number of out-of-stock items by 10% by connecting POS (point-of-sale) data with warehouse data to identify when inventory is running low.
+> Data Needed     : Latest POS and warehouse data
+
+Business Question : How can we determine which countries have the most visitors to our website?
+> Objective       : Increase brand awareness by 10% in the five countries with the most visitors as identified by website traffic.
+> Data Needed     : Number of visitor / web traffic for each country in the last six months.
+
+
+### TASK 2 : CAPTURE DATA
+
+Data Sources
+- The POS dataset is used by marketing and merchandising to track sales.
+- Web analytics data is used by both marketing and merchandising to track traffic to the site and monitor the success of products and campaigns.
+- The POS dataset stores data on every item ordered by a customer in a single transaction.
+- The web analytics data tracks the number of visitors by page and the visitors' location.
+
+Gaps
+- Since the POS data is not connected to the warehouse data, it's hard to know when we need to restock.
+
+Data Transformation
+- The POS data collects sales in the local currency, but it is difficult to compare sales from different countries.
+- The marketing team would like the web analytics results filtered to focus on specific countries where they currently have ads running.
+
+Recommendations
+> POS data needs to be integrated with warehouse data in real-time to effectively monitor and update inventory levels, helping to reduce out-of-stock situations. 
+  The system should also send alerts when stock hits a certain threshold.
+> The sales data collected can be converted into the same currency, such as USD. This will make it easier to compare sales across different countries. 
+  Additionally, we can consider normalizing the data by accounting for the purchasing power in each country.
+> Running country-based ads is recommended due to the different cultures, customer behaviour and purchasing power levels in each country. 
+  Continuous monitoring is also necessary to ensure that our campaigns are effective.
+
+
+### TASK 3 : 
+
+Manage
+- The POS information collects credit card information.
+- The current policy on who should have access to PII (personally identifiable information), like credit card information, is unclear.
+
+Analyze
+- The marketing team relies on a web traffic report that lists the total amount of traffic for the top five countries. This information should be updated daily.
+- The merchandising team would like a clear and insightful visualization to understand how customers purchase products together.
+
+Archive and Destroy
+- We shouldn't hold on to PII forever. We need a plan for when to destroy the data.
+- While most web analytics data is not actively referenced beyond six months, the marketing team occasionally requires historical data up to five years for specific 
+  campaigns or trends analysis.
+
+Recommendations
+> When collecting PII informations such as credit card, make sure to masking the data for privacy. Access to PII data should be governed by clear policies, 
+  allowing access only to authorized personnel. Additionally, PII data should be stored securely with encryption and access controls, and it should be deleted when 
+  no longer needed.
+> The marketing team needs an automated system to retrieve daily reports of web traffic in each country and upload the historical data into a database. 
+  The database should be connected directly to business intelligence tools such as Looker or BigQuery for further analysis and visualization. The older historical data
+  can be archieved.
