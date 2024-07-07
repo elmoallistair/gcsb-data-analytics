@@ -1,0 +1,31 @@
+# Module 1 Assessment
+
+1. A company is using BigQuery to store and analyze data from its sensors. The company wants to create a dashboard that shows the current temperature and humidity readings from all of its sensors. Which cloud data warehouse feature would be most helpful for creating this dashboard?
+> Real-time analytics 
+
+2. A photographer wants to store images in the cloud. Along with the photos, they want to keep data like where and when the photo was taken. Which storage type should the photographer choose?
+> Object storage
+
+3. For organizations, what does scalability in cloud computing mean?
+> Organizations can easily expand or upgrade computing resources to meet changing needs.
+
+4.Your organization wants to ensure sole access to its systems and sensitive information. Which computing model would provide that level of security in terms of sole access?
+> Traditional computing
+
+5. What is one of the advantages of cloud data warehouses when compared to on-premises data warehouses?
+> Cloud data warehouses have more uptime services and scalability.
+
+6. What is the primary function of BigQuery?
+> Store and analyze data.
+
+7. A company has an application that requires rapid access to chunks of data without the need for extensive metadata. Which storage method should they consider?
+> Block storage
+
+8. How are organizations charged for using cloud computing resources?
+> Organizations pay based on the cloud resources used.
+
+9. A large corporation wants to reduce its operational costs while still being able to utilize data and gather insights effectively. Which data storage solution would best help this corporation achieve its objective?
+> Cloud data warehouses
+
+10. A cloud data analyst is working with a large dataset of customer data. They need to identify the customers who have made the most purchases in the past year. Which BigQuery feature would be most helpful for this task?
+> SQL functions

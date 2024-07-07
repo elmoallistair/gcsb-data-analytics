@@ -1,0 +1,31 @@
+# Module 2 Assessment
+
+1. A company wants to transform its data after it has been loaded into the warehouse. Which process should the company use?
+> Extract, Load, Transform (ELT)
+
+2. You need to process a large amount of raw data and change it into a format for easy analysis. This process will affect your company’s storage costs in several ways. Which factors can significantly affect storage costs?
+> Faster data processing requires more advanced storage solutions.
+
+3. How does cloud data analytics help find faster and better ways to improve patient care in healthcare?
+> By learning how medical products work over time and identifying trends
+
+4. Jason wants to justify the amount of money spent on cloud services to achieve an operational goal. Which result of cloud cost optimization will help Jason?
+> Cost visibility
+
+5. You are shopping online. You add items to your cart and proceed to checkout. What backend component in cloud architecture enables this experience?
+> Application
+
+6. The IT team for a tech company is using several types of tools to support its internal operations. The IT team uses web interfaces, application programming interfaces (APIs), Pub/Sub, Looker, and Jupyter Notebooks. What data tasks would the IT team use these tools to conduct?
+> To access data stored in the cloud
+
+7. Which of the following Google BigQuery pricing models would be most suitable for users whose compute and storage needs fluctuate based on business priorities?
+> On-demand pricing
+
+8. How does integrating cloud data analytics into manufacturing processes help companies?
+> By optimizing operations for reliability and efficiency
+
+9. A cloud data analyst decides to use the rightsizing cost optimization strategy. What benefit does this strategy provide the analyst?
+> It optimizes the usage of computing resources for an application.
+
+10. You are planning to use a cloud service to hold and organize a large amount of data. Which component of cloud architecture will be most involved in this task?
+> Storage
